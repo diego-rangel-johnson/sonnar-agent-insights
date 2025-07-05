@@ -1,13 +1,39 @@
 {
-  "name": "dashboard-integrado",
+  "name": "sonnar-agent-insights",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Uma plataforma inteligente para análise e insights de agentes com integração ao Supabase",
+  "keywords": ["react", "supabase", "dashboard", "analytics", "agent-insights"],
+  "author": "Diego Rangel Johnson <diego.rangel.johnson@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diego-rangel-johnson/sonnar-agent-insights.git"
+  },
+  "homepage": "https://github.com/diego-rangel-johnson/sonnar-agent-insights",
+  "bugs": {
+    "url": "https://github.com/diego-rangel-johnson/sonnar-agent-insights/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"No tests implemented yet\" && exit 0",
+    "test:watch": "echo \"No tests implemented yet\"",
+    "test:coverage": "echo \"No tests implemented yet\"",
+    "type-check": "echo \"No TypeScript configured\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rm -rf dist node_modules/.cache",
+    "prepare": "git config core.hooksPath .githooks || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.2",
