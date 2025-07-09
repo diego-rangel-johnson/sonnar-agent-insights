@@ -9,7 +9,7 @@ export default [
     ignores: [
       'dist/**',
       'node_modules/**',
-      'supabase/functions/**/*.ts', // Ignorar Deno functions
+      'supabase/**', // Ignorar todas as funções Supabase/Deno
       '.eslintrc.js', // Ignorar arquivo legado
       'tailwind.config.js',
       'vite.config.js',
