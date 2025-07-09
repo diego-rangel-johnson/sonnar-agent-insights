@@ -139,3 +139,44 @@ POST /functions/v1/setup-gmail-watch
 2. **Configurar OAuth** com URLs do Vercel
 3. **Testar integração completa**
 4. **Configurar renovação automática** do watch 
+
+## 🔍 **Você está na página errada!**
+
+Vejo que você está no **Security Command Center** (Centro de Comando de Segurança), mas precisa ir para a seção **IAM** para adicionar as permissões.
+
+## 🧭 **Como navegar para o local correto:**
+
+### **Método 1: Menu de Navegação**
+1. **Clique no menu hambúrguer** (☰) no canto superior esquerdo
+2. **Role para baixo** até encontrar **"IAM e administrador"**
+3. **Clique em** `IAM e administrador` → `IAM`
+
+### **Método 2: URL Direta**
+**Copie e cole esta URL no seu navegador:**
+```
+https://console.cloud.google.com/iam-admin/iam?authuser=1&hl=pt-br&project=sonnar-email-integration
+```
+
+### **Método 3: Busca Rápida**
+1. **Na barra de busca** do Google Cloud Console (no topo)
+2. **Digite:** `IAM`
+3. **Clique no resultado** "IAM e administrador"
+
+## 📝 **Quando chegar na página IAM:**
+
+A página vai mostrar:
+- **Título:** "IAM" 
+- **Botão azul:** `+ CONCEDER ACESSO`
+- **Lista de principais** e suas funções
+
+## 🎯 **Então faça:**
+1. **Clique em** `+ CONCEDER ACESSO`
+2. **Em "Novos principais":** `gmail-api-push@system.gserviceaccount.com`
+3. **Em "Função":** Busque por `Pub/Sub Publisher`
+4. **Clique em** `SALVAR`
+
+## ⚠️ **Se der o mesmo erro de política:**
+
+Significa que o projeto `sonnar-email-integration` também tem **restrições organizacionais**. Nesse caso, vamos usar a **Opção 3 (Polling)** que mencionei antes, que **não precisa dessas permissões especiais**.
+
+**Conseguiu navegar para a página IAM?** Se der o mesmo erro, me avise que implemento o sistema de polling! 🚀 
