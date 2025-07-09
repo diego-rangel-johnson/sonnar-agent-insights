@@ -65,6 +65,11 @@ export default function Layout({ children, currentPageName }) {
           path: 'Channels'
         },
         {
+          name: 'Supervisão Email',
+          icon: FileText,
+          path: 'EmailSupervision'
+        },
+        {
           name: 'Atendimento',
           icon: Headphones,
           path: 'Support'

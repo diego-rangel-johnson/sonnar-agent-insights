@@ -549,8 +549,8 @@ export default function AgentInsights() {
       for (const agentId of selectedTaskForce) {
         const agentName = agentTeams.find(team => team.id === agentId)?.name || 'Agente';
         
-        // Chamar API real de IA para cada agente
-        const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-agent-handler`, {
+        // Chamar API real de IA para cada agente usando a nova Edge Function
+        const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-orchestrator`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -562,7 +562,8 @@ export default function AgentInsights() {
             context: {
               channel: selectedChannel,
               phoneNumber: phoneNumber,
-              testMode: true
+              testMode: true,
+              timestamp: new Date().toISOString()
             }
           })
         });
@@ -586,7 +587,9 @@ export default function AgentInsights() {
                 content: aiResponse.response,
                 status: 'sent',
                 type: 'text',
-                sentiment: aiResponse.sentiment
+                sentiment: aiResponse.sentiment,
+                confidence: aiResponse.confidence,
+                model: aiResponse.model
               }
             ],
             metrics: {
@@ -613,6 +616,40 @@ export default function AgentInsights() {
               })
             });
           }
+        } else {
+          // Fallback para simulação em caso de erro
+          const errorData = await response.json();
+          console.warn('Erro na API de IA, usando fallback:', errorData);
+          
+          const conversation = {
+            id: `conv_${agentId}_${Date.now()}`,
+            agentId,
+            agentName,
+            targetNumber: phoneNumber,
+            channel: selectedChannel,
+            status: 'active',
+            startTime: new Date(),
+            messages: [
+              {
+                id: 1,
+                timestamp: new Date(),
+                sender: 'agent',
+                content: errorData.fallback || `Sou o agente ${agentName} e recebi sua mensagem: "${testPrompt}". Esta é uma resposta de fallback.`,
+                status: 'sent',
+                type: 'text',
+                sentiment: 'neutral',
+                confidence: 0.5,
+                model: 'fallback'
+              }
+            ],
+            metrics: {
+              responseTime: 0,
+              messageCount: 1,
+              engagement: 0
+            }
+          };
+          
+          conversations.push(conversation);
         }
       }
       

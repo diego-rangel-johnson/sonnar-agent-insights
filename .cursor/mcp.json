@@ -1,15 +1,18 @@
 {
   "mcpServers": {
-    "supabase": {
+    "sonnar-supabase-nsbjkxbfkhauitmjnkxh": {
       "command": "npx",
       "args": [
         "-y",
         "@supabase/mcp-server-supabase@latest",
-        "--project-ref=tjjpwsjrmoisowewehcs"
+        "--project-ref=nsbjkxbfkhauitmjnkxh",
+        "--access-token=sbp_3a8b4d59b4f7472a7041d87aa9f5e1babaa717e5"
       ],
       "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_99f440aaf70b8a7d242e43aeb822895872b9b5f8",
-        "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqanB3c2pybW9pc293ZXdlYmNzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MTQ5MDkxMywiZXhwIjoyMDY3MDY2OTEzfQ.8qkpcYCPzcthlWT1ZILVKjNffLSVlS-JhNc_2Ovwd90"
+        "SUPABASE_ACCESS_TOKEN": "sbp_3a8b4d59b4f7472a7041d87aa9f5e1babaa717e5",
+        "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5zYmpreGJma2hhdWl0bWpua3hoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MTQ5MjI0MSwiZXhwIjoyMDY3MDY4MjQxfQ.LNrW88vv6jgiwids3xX9xdL-gxmAPjNiteAugsx9vKk",
+        "PROJECT_NAME": "Sonnar-LastVersion",
+        "PROJECT_REF": "nsbjkxbfkhauitmjnkxh"
       }
     }
   }
