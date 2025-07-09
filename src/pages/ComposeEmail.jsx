@@ -33,7 +33,7 @@ const AGENT_FORCES = [
     id: 'comprador',
     name: 'COMPRADOR',
     description: 'Especialista em comportamento de compra e experiência do usuário',
-    icon: '🛒',
+    icon: '•',
     color: 'bg-blue-500',
     specialty: 'Simula comportamento de comprador real, avalia produtos e serviços'
   },
@@ -41,7 +41,7 @@ const AGENT_FORCES = [
     id: 'atendente',
     name: 'ATENDENTE',
     description: 'Especialista em qualidade de atendimento ao cliente',
-    icon: '🎧',
+    icon: '•',
     color: 'bg-green-500',
     specialty: 'Analisa qualidade do atendimento e sugere melhorias'
   },
@@ -49,7 +49,7 @@ const AGENT_FORCES = [
     id: 'investigador',
     name: 'INVESTIGADOR',
     description: 'Cliente oculto para avaliação de atendimento',
-    icon: '🕵️',
+    icon: '•',
     color: 'bg-purple-500',
     specialty: 'Simula cliente oculto para testar qualidade do atendimento'
   },
@@ -57,7 +57,7 @@ const AGENT_FORCES = [
     id: 'negociador',
     name: 'NEGOCIADOR',
     description: 'Especialista em vendas e fechamento de negócios',
-    icon: '🤝',
+    icon: '•',
     color: 'bg-yellow-500',
     specialty: 'Especializado em técnicas de vendas e negociação'
   },
@@ -65,7 +65,7 @@ const AGENT_FORCES = [
     id: 'qualificador',
     name: 'QUALIFICADOR',
     description: 'Especialista em qualificação de leads e prospects',
-    icon: '🎯',
+    icon: '•',
     color: 'bg-red-500',
     specialty: 'Qualifica leads e identifica oportunidades de negócio'
   },
@@ -73,7 +73,7 @@ const AGENT_FORCES = [
     id: 'mapeador',
     name: 'MAPEADOR',
     description: 'Especialista em jornada do cliente',
-    icon: '🗺️',
+    icon: '•',
     color: 'bg-indigo-500',
     specialty: 'Mapeia e otimiza jornadas do cliente'
   },
@@ -81,7 +81,7 @@ const AGENT_FORCES = [
     id: 'cronometrista',
     name: 'CRONOMETRISTA',
     description: 'Especialista em análise temporal e eficiência',
-    icon: '⏱️',
+    icon: '•',
     color: 'bg-orange-500',
     specialty: 'Analisa tempos e eficiência operacional'
   },
@@ -89,7 +89,7 @@ const AGENT_FORCES = [
     id: 'analista',
     name: 'ANALISTA',
     description: 'Especialista em análise de processos internos',
-    icon: '📊',
+    icon: '•',
     color: 'bg-cyan-500',
     specialty: 'Analisa processos e sugere otimizações'
   },
@@ -97,7 +97,7 @@ const AGENT_FORCES = [
     id: 'psicologo',
     name: 'PSICÓLOGO',
     description: 'Especialista em análise de sentimentos e comportamento',
-    icon: '🧠',
+    icon: '•',
     color: 'bg-pink-500',
     specialty: 'Analisa aspectos psicológicos e emocionais'
   },
@@ -105,32 +105,32 @@ const AGENT_FORCES = [
     id: 'solucionador',
     name: 'SOLUCIONADOR',
     description: 'Especialista em resolução de problemas técnicos',
-    icon: '🔧',
+    icon: '•',
     color: 'bg-gray-600',
     specialty: 'Resolve problemas técnicos e operacionais'
   }
 ]
 
 const EMAIL_OBJECTIVES = [
-  { value: 'prospeccao', label: '🎯 Prospecção de Clientes', description: 'Primeiro contato para gerar interesse' },
-  { value: 'followup_vendas', label: '📞 Follow-up de Vendas', description: 'Acompanhamento de proposta comercial' },
-  { value: 'reativacao', label: '🔄 Reativação de Cliente', description: 'Reconquista de clientes inativos' },
-  { value: 'apresentacao', label: '💼 Apresentação de Solução', description: 'Demonstração de produto/serviço' },
-  { value: 'negociacao', label: '🤝 Negociação', description: 'Discussão de termos e condições' },
-  { value: 'parceria', label: '🤜🤛 Proposta de Parceria', description: 'Estabelecimento de parcerias' },
-  { value: 'suporte', label: '🛠️ Suporte Técnico', description: 'Resolução de problemas' },
-  { value: 'agradecimento', label: '🙏 Agradecimento', description: 'Reconhecimento e gratidão' },
-  { value: 'convite', label: '🎪 Convite para Evento', description: 'Convites para eventos/reuniões' },
-  { value: 'feedback', label: '💬 Solicitação de Feedback', description: 'Coleta de opiniões e sugestões' }
+  { value: 'prospeccao', label: '• Prospecção de Clientes', description: 'Primeiro contato para gerar interesse' },
+  { value: 'followup_vendas', label: '• Follow-up de Vendas', description: 'Acompanhamento de proposta comercial' },
+  { value: 'reativacao', label: '• Reativação de Cliente', description: 'Reconquista de clientes inativos' },
+  { value: 'apresentacao', label: '• Apresentação de Solução', description: 'Demonstração de produto/serviço' },
+  { value: 'negociacao', label: '• Negociação', description: 'Discussão de termos e condições' },
+  { value: 'parceria', label: '• Proposta de Parceria', description: 'Estabelecimento de parcerias' },
+  { value: 'suporte', label: '• Suporte Técnico', description: 'Resolução de problemas' },
+  { value: 'agradecimento', label: '• Agradecimento', description: 'Reconhecimento e gratidão' },
+  { value: 'convite', label: '• Convite para Evento', description: 'Convites para eventos/reuniões' },
+  { value: 'feedback', label: '• Solicitação de Feedback', description: 'Coleta de opiniões e sugestões' }
 ]
 
 const EMAIL_TONES = [
-  { value: 'formal', label: '👔 Formal', description: 'Tom corporativo e profissional' },
-  { value: 'amigavel', label: '😊 Amigável', description: 'Tom caloroso e próximo' },
-  { value: 'direto', label: '⚡ Direto', description: 'Objetivo e conciso' },
-  { value: 'consultivo', label: '🧭 Consultivo', description: 'Educativo e orientativo' },
-  { value: 'urgente', label: '🚨 Urgente', description: 'Transmite urgência' },
-  { value: 'casual', label: '👋 Casual', description: 'Descontraído e informal' }
+  { value: 'formal', label: '• Formal', description: 'Tom corporativo e profissional' },
+  { value: 'amigavel', label: '• Amigável', description: 'Tom caloroso e próximo' },
+  { value: 'direto', label: '• Direto', description: 'Objetivo e conciso' },
+  { value: 'consultivo', label: '• Consultivo', description: 'Educativo e orientativo' },
+  { value: 'urgente', label: '• Urgente', description: 'Transmite urgência' },
+  { value: 'casual', label: '• Casual', description: 'Descontraído e informal' }
 ]
 
 export default function ComposeEmail() {
@@ -393,7 +393,7 @@ Assunto: [assunto sugerido]
                   placeholder="contato@empresa.com"
                   value={formData.recipientEmail}
                   onChange={(e) => handleInputChange('recipientEmail', e.target.value)}
-                  className={errors.recipientEmail ? 'border-red-500' : ''}
+                  className={errors.recipientEmail ? 'border-red-500' : 'focus:border-purple-800 focus:ring-purple-800'}
                 />
                 {errors.recipientEmail && (
                   <p className="text-red-500 text-sm mt-1">{errors.recipientEmail}</p>
@@ -407,6 +407,7 @@ Assunto: [assunto sugerido]
                   placeholder="João Silva"
                   value={formData.recipientName}
                   onChange={(e) => handleInputChange('recipientName', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
               
@@ -417,6 +418,7 @@ Assunto: [assunto sugerido]
                   placeholder="Empresa ABC Ltda"
                   value={formData.recipientCompany}
                   onChange={(e) => handleInputChange('recipientCompany', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
               
@@ -427,6 +429,7 @@ Assunto: [assunto sugerido]
                   placeholder="Diretor Comercial"
                   value={formData.recipientPosition}
                   onChange={(e) => handleInputChange('recipientPosition', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
             </CardContent>
@@ -449,7 +452,7 @@ Assunto: [assunto sugerido]
                   placeholder="Maria Santos"
                   value={formData.senderName}
                   onChange={(e) => handleInputChange('senderName', e.target.value)}
-                  className={errors.senderName ? 'border-red-500' : ''}
+                  className={errors.senderName ? 'border-red-500' : 'focus:border-purple-800 focus:ring-purple-800'}
                 />
                 {errors.senderName && (
                   <p className="text-red-500 text-sm mt-1">{errors.senderName}</p>
@@ -463,7 +466,7 @@ Assunto: [assunto sugerido]
                   placeholder="maria@minhaempresa.com"
                   value={formData.senderEmail}
                   onChange={(e) => handleInputChange('senderEmail', e.target.value)}
-                  className={errors.senderEmail ? 'border-red-500' : ''}
+                  className={errors.senderEmail ? 'border-red-500' : 'focus:border-purple-800 focus:ring-purple-800'}
                 />
                 {errors.senderEmail && (
                   <p className="text-red-500 text-sm mt-1">{errors.senderEmail}</p>
@@ -477,6 +480,7 @@ Assunto: [assunto sugerido]
                   placeholder="Consultora de Vendas"
                   value={formData.senderPosition}
                   onChange={(e) => handleInputChange('senderPosition', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
               
@@ -487,6 +491,7 @@ Assunto: [assunto sugerido]
                   placeholder="Minha Empresa Ltda"
                   value={formData.senderCompany}
                   onChange={(e) => handleInputChange('senderCompany', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
             </CardContent>
@@ -505,15 +510,15 @@ Assunto: [assunto sugerido]
               <div>
                 <Label htmlFor="objective">Objetivo do Email *</Label>
                 <Select value={formData.objective} onValueChange={(value) => handleInputChange('objective', value)}>
-                  <SelectTrigger className={errors.objective ? 'border-red-500' : ''}>
+                  <SelectTrigger className={errors.objective ? 'border-red-500' : 'focus:border-purple-800 focus:ring-purple-800'}>
                     <SelectValue placeholder="Selecione o objetivo" />
                   </SelectTrigger>
                   <SelectContent>
                     {EMAIL_OBJECTIVES.map((obj) => (
                       <SelectItem key={obj.value} value={obj.value}>
-                        <div>
-                          <div className="font-medium">{obj.label}</div>
-                          <div className="text-sm text-gray-500">{obj.description}</div>
+                        <div className="text-left">
+                          <div className="font-medium text-left">{obj.label}</div>
+                          <div className="text-sm text-gray-500 text-left">{obj.description}</div>
                         </div>
                       </SelectItem>
                     ))}
@@ -527,15 +532,15 @@ Assunto: [assunto sugerido]
               <div>
                 <Label htmlFor="tone">Tom do Email</Label>
                 <Select value={formData.tone} onValueChange={(value) => handleInputChange('tone', value)}>
-                  <SelectTrigger>
+                  <SelectTrigger className="focus:border-purple-800 focus:ring-purple-800">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
                     {EMAIL_TONES.map((tone) => (
                       <SelectItem key={tone.value} value={tone.value}>
-                        <div>
-                          <div className="font-medium">{tone.label}</div>
-                          <div className="text-sm text-gray-500">{tone.description}</div>
+                        <div className="text-left">
+                          <div className="font-medium text-left">{tone.label}</div>
+                          <div className="text-sm text-gray-500 text-left">{tone.description}</div>
                         </div>
                       </SelectItem>
                     ))}
@@ -550,6 +555,7 @@ Assunto: [assunto sugerido]
                   placeholder="A IA pode sugerir um assunto"
                   value={formData.subject}
                   onChange={(e) => handleInputChange('subject', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
               
@@ -560,6 +566,7 @@ Assunto: [assunto sugerido]
                   placeholder="ex: Agendar reunião, Solicitar proposta"
                   value={formData.callToAction}
                   onChange={(e) => handleInputChange('callToAction', e.target.value)}
+                  className="focus:border-purple-800 focus:ring-purple-800"
                 />
               </div>
             </CardContent>
@@ -598,17 +605,17 @@ Assunto: [assunto sugerido]
             </CardHeader>
             <CardContent>
               <Select value={formData.selectedAgent} onValueChange={(value) => handleInputChange('selectedAgent', value)}>
-                <SelectTrigger className={errors.selectedAgent ? 'border-red-500' : ''}>
+                <SelectTrigger className={errors.selectedAgent ? 'border-red-500' : 'focus:border-purple-800 focus:ring-purple-800'}>
                   <SelectValue placeholder="Selecione uma força tarefa" />
                 </SelectTrigger>
                 <SelectContent>
                   {AGENT_FORCES.map((agent) => (
                     <SelectItem key={agent.id} value={agent.id}>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 text-left">
                         <span>{agent.icon}</span>
-                        <div>
-                          <div className="font-medium">{agent.name}</div>
-                          <div className="text-sm text-gray-500">{agent.description}</div>
+                        <div className="text-left">
+                          <div className="font-medium text-left">{agent.name}</div>
+                          <div className="text-sm text-gray-500 text-left">{agent.description}</div>
                         </div>
                       </div>
                     </SelectItem>
@@ -642,7 +649,7 @@ Assunto: [assunto sugerido]
             onClick={generateDraft}
             disabled={loading}
             size="lg"
-            className="px-8"
+            className="px-8 bg-purple-800 hover:bg-purple-700 text-white"
           >
             {loading ? (
               <>
@@ -696,7 +703,7 @@ Assunto: [assunto sugerido]
                   Editar Rascunho
                 </Button>
                 
-                <Button onClick={sendEmail} disabled={loading}>
+                <Button onClick={sendEmail} disabled={loading} className="bg-purple-800 hover:bg-purple-700 text-white">
                   {loading ? (
                     <>
                       <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
@@ -751,7 +758,7 @@ Assunto: [assunto sugerido]
                 Cancelar
               </Button>
               
-              <Button onClick={saveEdit}>
+              <Button onClick={saveEdit} className="bg-purple-800 hover:bg-purple-700 text-white">
                 <Check className="w-4 h-4 mr-2" />
                 Salvar Alterações
               </Button>
