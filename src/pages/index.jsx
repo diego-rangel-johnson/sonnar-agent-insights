@@ -6,6 +6,7 @@ import Stats from "./Stats";
 import Support from "./Support";
 import AgentInsights from "./AgentInsights";
 import EmailSupervision from "./EmailSupervision";
+import ComposeEmail from "./ComposeEmail";
 import LandingPage from "./LandingPage";
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
@@ -49,6 +50,7 @@ const PAGES = {
     AIAgents: AIAgents,
     AgentInsights: AgentInsights,
     EmailSupervision: EmailSupervision,
+    ComposeEmail: ComposeEmail,
     Stats: Stats,
     Support: Support,
 }
@@ -120,6 +122,14 @@ function PagesContent() {
                     <ProtectedRoute>
                         <Layout currentPageName="EmailSupervision" onLogout={signOut}>
                             <EmailSupervision />
+                        </Layout>
+                    </ProtectedRoute>
+                } />
+                
+                <Route path="/composeemail" element={
+                    <ProtectedRoute>
+                        <Layout currentPageName="ComposeEmail" onLogout={signOut}>
+                            <ComposeEmail />
                         </Layout>
                     </ProtectedRoute>
                 } />

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 
 // Sistema de notificações usando Supabase Realtime
@@ -165,7 +166,7 @@ export const AgentNotifications = {
 
 // Hook para usar notificações em componentes React
 export const useNotifications = () => {
-  const [notifications, setNotifications] = React.useState([])
+  const [notifications, setNotifications] = useState([])
 
   const addNotification = (notification) => {
     setNotifications(prev => [...prev, {

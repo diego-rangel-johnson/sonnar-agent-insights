@@ -19,7 +19,8 @@ import {
   PieChart,
   Headphones,
   Lightbulb,
-  Briefcase
+  Briefcase,
+  Send
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -63,6 +64,11 @@ export default function Layout({ children, currentPageName }) {
           name: 'Canais',
           icon: MessageSquare,
           path: 'Channels'
+        },
+        {
+          name: 'Compor Email',
+          icon: Send,
+          path: 'ComposeEmail'
         },
         {
           name: 'Supervisão Email',
